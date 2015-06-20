@@ -1,1 +1,29 @@
-<xml xmlns="http://www.w3.org/1999/xhtml"></xml>
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <block type="movement_stutter" id="46" x="333" y="18">
+    <next>
+      <block type="robot_delay" id="64" inline="true">
+        <value name="DELAY">
+          <block type="math_number" id="98">
+            <field name="NUM">4000</field>
+          </block>
+        </value>
+        <next>
+          <block type="movement_forward" id="56">
+            <next>
+              <block type="robot_delay" id="80" inline="true">
+                <value name="DELAY">
+                  <block type="math_number" id="106">
+                    <field name="NUM">5000</field>
+                  </block>
+                </value>
+                <next>
+                  <block type="movement_stop" id="91"></block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </next>
+  </block>
+</xml>
